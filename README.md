@@ -1,4 +1,4 @@
-# WEB RTC in Docker container
+# Audio in Docker container
 
 ## Configure
 
@@ -14,4 +14,4 @@ Duplicate `asound.conf.sample` into `asound.conf` and change the occurences of `
 
 `docker run --device=/dev/snd -it --rm sound /bin/ash`
 
-Then install some player (like `mpg123` with `apk add mpg123`), mount or download an audio file and it'll play!
+You can start recording audio with `node index.js` and the play it back with `play examples-recordings/some_audio_file.wav`.
